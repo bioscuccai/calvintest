@@ -1,0 +1,5 @@
+wsa: test.WebsocketActor(port=9000)
+printer: io.StandardOut()
+#term: std.Terminator()
+#wsa.message>term.void
+wsa.message>printer.token
